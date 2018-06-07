@@ -5,9 +5,7 @@ In order to use this API wrapper you need to have API keys from [TradeOgre](http
 
 Open `Account` --> `Settings` --> `API Keys`
 
-## Example usage
-
-#### Loading API Keys
+## Load API keys
 
 __From file__
 ```python
@@ -33,7 +31,7 @@ trade_ogre = TradeOgre.API()
 trade_ogre.balances(key=some_key, secret=same_currency)
 ```
 
-## Usage
+## Example usage
 
 #### Markets
 Retrieve a listing of all markets
