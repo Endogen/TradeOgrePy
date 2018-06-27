@@ -35,66 +35,66 @@ trade_ogre.balances(key=some_key, secret=same_currency)
 
 #### Markets
 Retrieve a listing of all markets
-```
+```python
 trade_ogre.markets()
 ```
 
 #### Orders
 Retrieve the current order book for a market
-```
+```python
 trade_ogre.orders('BTC-XMR')
 ```
 
 #### Ticker
 Retrieve the ticker for a market
-```
+```python
 trade_ogre.ticker('BTC-XMR')
 ```
 
 #### History
 Retrieve the history of the last trades on a market
-```
+```python
 trade_ogre.history('BTC-XTL')
 ```
 
 #### Balance
 Get the balance of a specific currency
-```
+```python
 trade_ogre.balance('BTC')
 ```
 
 #### Balances
 Retrieve all balances for your account
-```
+```python
 trade_ogre.balance('BTC')
 ```
 
 #### Buy
 Submit a buy order to the order book for a market
-```
+```python
 trade_ogre.buy('BTC-XMR', '10', '0.0123')  # market, quantity, price
 ```
 
 #### Sell
 Submit a sell order to the order book for a market
-```
+```python
 trade_ogre.sell('BTC-XMR', '10', '0.0123')  # market, quantity, price
 ```
 
 #### Order
 Retrieve information about a specific order
-```
+```python
 trade_ogre.order('BTC-XMR')
 ```
 
 #### Orders
 Retrieve the active orders under your account
-```
+```python
 trade_ogre.orders('BTC-XMR')
 ```
 
 #### Cancel
 Cancel an order on the order book
-```
+```python
 trade_ogre.cancel('a40ac710-8dc5-b5a8-aa69-389715197b14')
 ```
