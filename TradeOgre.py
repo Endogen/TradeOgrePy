@@ -1,7 +1,7 @@
 import requests
 
 
-class API(object):
+class TradeOgre(object):
     """ Maintains a single session between this machine and TradeOgre.
 
     Specifying a key/secret pair is optional. If not specified, key and
@@ -55,7 +55,7 @@ class API(object):
         self.response = requests.get(self.uri + '/markets').json()
         return self.response
 
-    def orders(self, market):
+    def order_book(self, market):
         """ Retrieve the current order book for a market such as 'BTC-XMR'.
 
         :param market: market such as 'BTC-XMR'
